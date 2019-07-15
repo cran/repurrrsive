@@ -1,30 +1,36 @@
 Package: repurrrsive
 Title: Examples of Recursive Lists and Nested or Split Data Frames
-Version: 0.1.0
-Authors@R: c(
-  person("Jennifer", "Bryan", role=c("aut", "cre"),
-    email = "jenny@rstudio.com"),
-  person("Charlotte", "Wickham", role = "ctb", 
-    email = "cwickham@gmail.com"))
-Description: Recursive lists in the form of R objects, 'JSON', and 'XML', for use in
-    teaching and examples. Examples include color palettes, Game of Thrones
-    characters, 'GitHub' users and repositories, and entities from the Star Wars
-    universe. Data from the 'gapminder' package is also included, as a simple data
-    frame and in nested and split forms.
-Depends: R (>= 2.10)
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Jennifer",
+             family = "Bryan",
+             role = c("aut", "cre"),
+             email = "jenny@rstudio.com",
+             comment = c(ORCID = "0000-0002-6983-2759")),
+      person(given = "Charlotte",
+             family = "Wickham",
+             role = "ctb",
+             email = "cwickham@gmail.com"))
+Description: Recursive lists in the form of R objects, 'JSON',
+    and 'XML', for use in teaching and examples. Examples include color
+    palettes, Game of Thrones characters, 'GitHub' users and repositories,
+    music collections, and entities from the Star Wars universe. Data from
+    the 'gapminder' package is also included, as a simple data frame and
+    in nested and split forms.
 License: CC0
-Encoding: UTF-8
-LazyData: true
-RoxygenNote: 6.0.1
-Suggests: gapminder, jsonlite, purrr, rprojroot, testthat, wesanderson,
-        xml2
 URL: https://github.com/jennybc/repurrrsive
 BugReports: https://github.com/jennybc/repurrrsive/issues
+Depends: R (>= 2.10)
 Imports: tibble, utils
+Suggests: gapminder, jsonlite, purrr, rprojroot, testthat (>= 2.1.0),
+        wesanderson, xml2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
 NeedsCompilation: no
-Packaged: 2017-09-08 15:07:55 UTC; jenny
-Author: Jennifer Bryan [aut, cre],
+Packaged: 2019-07-15 19:21:21 UTC; jenny
+Author: Jennifer Bryan [aut, cre] (<https://orcid.org/0000-0002-6983-2759>),
   Charlotte Wickham [ctb]
 Maintainer: Jennifer Bryan <jenny@rstudio.com>
 Repository: CRAN
-Date/Publication: 2017-09-08 17:21:59 UTC
+Date/Publication: 2019-07-15 19:40:03 UTC
