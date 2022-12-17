@@ -10,11 +10,15 @@
 #' @examples
 #' gap_simple
 #' gap_nested
-#' gap_split
+#'
+#' str(gap_split, max.level = 1, list.len = 10)
+#' str(gap_split[[1]])
 "gap_simple"
 
+#' @format NULL
 #' @rdname gap_simple
 "gap_nested"
 
+#' @format NULL
 #' @rdname gap_simple
 "gap_split"

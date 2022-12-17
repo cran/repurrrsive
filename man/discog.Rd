@@ -4,13 +4,15 @@
 \name{discog}
 \alias{discog}
 \title{Sharla Gelfand's music collection}
-\format{A unnamed list with 155 components, each representing an item in
-Sharla's music collection.}
+\format{
+A unnamed list with 155 components, each representing an item in
+Sharla's music collection.
+}
 \source{
 \itemize{
 \item Data retrieved on 2019-07-15 from \url{https://www.discogs.com}
 \item Original blog post by Sharla Gelfand
-\url{https://sharla.party/posts/discog-purrr/}
+\url{https://sharla.party/post/discog-purrr/}
 }
 }
 \usage{
@@ -28,7 +30,8 @@ str(discog, max.level = 2, list.len = 2)
 vapply(discog[1:6], `[[`, c("basic_information", "title"), FUN.VALUE = "")
 }
 \seealso{
-Other Discogs data and functions: \code{\link{discog_json}}
+Other Discogs data and functions: 
+\code{\link{discog_json}()}
 }
 \concept{Discogs data and functions}
 \keyword{datasets}

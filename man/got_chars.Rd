@@ -4,9 +4,11 @@
 \name{got_chars}
 \alias{got_chars}
 \title{Game of Thrones POV characters}
-\format{A unnamed list with 30 components, each representing a POV character.
+\format{
+A unnamed list with 30 components, each representing a POV character.
 Each character's component is a named list of length 18, containing
-information such as name, aliases, and house allegiances.}
+information such as name, aliases, and house allegiances.
+}
 \source{
 \url{https://anapioficeandfire.com}
 }
@@ -19,11 +21,13 @@ Song of Ice and Fire series by George R. R. Martin. Retrieved from An API Of
 Ice And Fire.
 }
 \examples{
-got_chars
+str(got_chars, max.level = 1, list.len = 10)
+str(got_chars[[1]])
 str(lapply(got_chars, `[`, c("name", "culture")))
 }
 \seealso{
-Other Game of Thrones data and functions: \code{\link{got_chars_json}}
+Other Game of Thrones data and functions: 
+\code{\link{got_chars_json}()}
 }
 \concept{Game of Thrones data and functions}
 \keyword{datasets}

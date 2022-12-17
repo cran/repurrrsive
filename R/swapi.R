@@ -12,31 +12,38 @@
 #' }
 #'
 #' @format Unnamed lists with varying number of components.
-#' @source Data comes from <http://swapi.co/> retrieved using
-#'    the `rwars` package: <https://github.com/Ironholds/rwars>
+#' @source Data originally obtained from `http://swapi.co/` using the rwars
+#'   package: <https://github.com/Ironholds/rwars>. The Star Wars API appears to
+#'   have moved to `https://pipedream.com/apps/swapi` since that time.
+#'
 #' @examples
 #' # sw_people
-#' length(sw_people)
-#' names(sw_people[[1]])
+#' str(sw_people, max.level = 1)
+#' str(sw_people[[1]])
 #' sapply(sw_people, `[[`, "name")
 #'
 #' # sw_films
-#' length(sw_films)
-#' names(sw_films[[1]])
+#' str(sw_films, max.level = 1)
+#' str(sw_films[[1]])
 #' sapply(sw_films, `[[`, "title")
 "sw_people"
 
+#' @format NULL
 #' @rdname sw_people
 "sw_films"
 
+#' @format NULL
 #' @rdname sw_people
 "sw_planets"
 
+#' @format NULL
 #' @rdname sw_people
 "sw_species"
 
+#' @format NULL
 #' @rdname sw_people
 "sw_vehicles"
 
+#' @format NULL
 #' @rdname sw_people
 "sw_starships"

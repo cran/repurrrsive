@@ -9,10 +9,13 @@
 \alias{sw_vehicles}
 \alias{sw_starships}
 \title{Entities from the Star Wars Universe}
-\format{Unnamed lists with varying number of components.}
+\format{
+Unnamed lists with varying number of components.
+}
 \source{
-Data comes from \url{http://swapi.co/} retrieved using
-the \code{rwars} package: \url{https://github.com/Ironholds/rwars}
+Data originally obtained from \verb{http://swapi.co/} using the rwars
+package: \url{https://github.com/Ironholds/rwars}. The Star Wars API appears to
+have moved to \verb{https://pipedream.com/apps/swapi} since that time.
 }
 \usage{
 sw_people
@@ -42,13 +45,13 @@ Data retrieved from the swapi API on the Star Wars Universe.
 }
 \examples{
 # sw_people
-length(sw_people)
-names(sw_people[[1]])
+str(sw_people, max.level = 1)
+str(sw_people[[1]])
 sapply(sw_people, `[[`, "name")
 
 # sw_films
-length(sw_films)
-names(sw_films[[1]])
+str(sw_films, max.level = 1)
+str(sw_films[[1]])
 sapply(sw_films, `[[`, "title")
 }
 \keyword{datasets}
